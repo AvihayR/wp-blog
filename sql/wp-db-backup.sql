@@ -28,10 +28,10 @@
 
 # Delete any existing table `wp_options`
 
+USE 'wpdb';
 DROP TABLE IF EXISTS `wp_options`;
 
 # Table structure of table `wp_options`
-USE 'wpdb';
 CREATE TABLE `wp_options` (
   `option_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `option_name` varchar(191) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
